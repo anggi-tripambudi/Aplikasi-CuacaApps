@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.dark-container {
+  --background: #0b0f19;
+  color: #f3f4f6;
+}
+
+.content-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.custom-toolbar {
+  --background: #111827;
+  --border-color: #1f2937;
+  padding: 8px 12px;
+}
+
+.app-title {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #f9fafb;
+}
+
+.identity-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.8));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge-student {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.825rem;
+  font-weight: 600;
+}
+
+.name-badge {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.nim-badge {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.location-badge {
+  font-size: 0.825rem;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  padding: 16px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.stat-title {
+  font-size: 0.775rem;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.stat-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.text-blue { color: #38bdf8; }
+.text-amber { color: #fbbf24; }
+.text-cyan { color: #22d3ee; }
+
+.card-glass {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.table-header-title {
+  margin-bottom: 20px;
+}
+
+.table-header-title h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f9fafb;
+}
+
+.sub-title {
+  font-size: 0.825rem;
+  color: #6b7280;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+}
+
+.modern-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.modern-table th {
+  background: #0b0f19;
+  color: #9ca3af;
+  font-weight: 600;
+  padding: 14px 16px;
+  border-bottom: 1px solid #1f2937;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.modern-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.table-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.row-num { color: #6b7280; }
+.font-semibold { font-weight: 600; color: #f3f4f6; }
+.text-muted { color: #9ca3af; }
+
+.time-chip {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.weather-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.weather-tag.cerah {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.weather-tag.berawan {
+  background: rgba(156, 163, 175, 0.15);
+  color: #d1d5db;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+}
+
+.weather-tag.mendung {
+  background: rgba(107, 114, 128, 0.2);
+  color: #9ca3af;
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.weather-tag.hujan {
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.temp-badge {
+  display: inline-block;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.state-cell {
+  text-align: center;
+  padding: 30px;
+  color: #9ca3af;
+}
+
+.text-error { color: #ef4444; }
+
+.table-footer-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: #9ca3af;
+}
+
+.custom-select-item {
+  --background: #1f2937;
+  --border-radius: 10px;
+  padding-left: 10px;
+  border: 1px solid #374151;
+  border-radius: 10px;
+}
+
+.custom-select {
+  color: #f9fafb;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* ================= MODE TERANG MODERN (LIGHT MODE) ================= */
+.light-container {
+  --background: #F8FAFC;
+  color: #0F172A;
+}
+
+/* 1. Header paling atas TETAP GELAP agar tidak washed-out */
+.light-container .custom-toolbar {
+  --background: #0F172A;
+  --border-color: #1E293B;
+  color: #FFFFFF;
+}
+
+.light-container .app-title {
+  color: #F8FAFC;
+  font-weight: 700;
+}
+
+/* 2. Banner Identitas (Modern Elevated Card) */
+.light-container .identity-banner {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
+}
+
+.light-container .badge-student {
+  background: #F1F5F9;
+  color: #0F172A;
+  font-weight: 600;
+  border: 1px solid #CBD5E1;
+}
+
+.light-container .location-badge {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  font-weight: 600;
+  border: 1px solid #BFDBFE;
+}
+
+/* 3. Kartu Statistik Suhu (Clean & Sharp) */
+.light-container .stat-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  border-radius: 16px;
+}
+
+.light-container .stat-title {
+  color: #475569;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.light-container .stat-value {
+  font-weight: 800;
+}
+
+.light-container .text-blue { color: #2563EB; }
+.light-container .text-amber { color: #D97706; }
+.light-container .text-cyan { color: #0891B2; }
+
+/* 4. Kontainer Utama Tabel */
+.light-container .card-glass {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
+}
+
+.light-container .table-header-title h3 {
+  color: #0F172A;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.light-container .sub-title {
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* 5. Tabel Modern Berkontras Tinggi */
+.light-container .table-responsive {
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.light-container .modern-table {
+  background: #FFFFFF;
+}
+
+.light-container .modern-table th {
+  background: #F1F5F9;
+  color: #334155;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #E2E8F0;
+  padding: 14px 16px;
+}
+
+.light-container .modern-table td {
+  border-bottom: 1px solid #F1F5F9;
+  color: #0F172A;
+  font-weight: 500;
+  padding: 14px 16px;
+}
+
+.light-container .table-row:hover {
+  background: #F8FAFC;
+}
+
+.light-container .font-semibold {
+  color: #0F172A;
+  font-weight: 700;
+}
+
+.light-container .text-muted {
+  color: #475569;
+}
+
+/* 6. Chip Jam & Badge Suhu */
+.light-container .time-chip {
+  background: #E2E8F0;
+  color: #0F172A;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.light-container .temp-badge {
+  background: #F1F5F9;
+  color: #0F172A;
+  font-weight: 800;
+  border: 1px solid #CBD5E1;
+  padding: 6px 12px;
+  border-radius: 10px;
+}
+
+/* 7. Dropdown & Filter Footer */
+.light-container .table-footer-controls {
+  border-top: 1px solid #E2E8F0;
+}
+
+.light-container .filter-group label {
+  color: #334155;
+  font-weight: 600;
+}
+
+.light-container .custom-select-item {
+  --background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+}
+
+.light-container .custom-select {
+  color: #0F172A;
+  font-weight: 600;
+}
+
+/* Badge Kondisi Cuaca untuk Light Mode (Kontras Tinggi) */
+.light-container .weather-tag {
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+/* ☀️ Cerah (Kuning / Oranye Warm) */
+.light-container .weather-tag.cerah {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FCD34D;
+}
+
+/* ⛅ Berawan (Biru Cerah) */
+.light-container .weather-tag.berawan {
+  background-color: #E0F2FE;
+  color: #075985;
+  border: 1px solid #7DD3FC;
+}
+
+/* ☁️ Mendung (Abu-abu Slate) */
+.light-container .weather-tag.mendung {
+  background-color: #F1F5F9;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+}
+
+/* 🌧️ Hujan / Sejuk (Biru Nila) */
+.light-container .weather-tag.hujan {
+  background-color: #E0E7FF;
+  color: #3730A3;
+  border: 1px solid #A5B4FC;
+}
+
+/* Garis pemisah antar-baris tabel (Light Mode) */
+.light-container .modern-table td {
+  border-bottom: 1px solid #CBD5E1 !important; /* Garis batas abu-abu tegas */
+}
+
+/* Garis bawah pada seluruh baris tabel */
+.light-container .table-row {
+  border-bottom: 1px solid #CBD5E1;
+}
+
+/* Efek sorot saat kursor mengarah ke baris tabel */
+.light-container .table-row:hover {
+  background-color: #F1F5F9;
+}
